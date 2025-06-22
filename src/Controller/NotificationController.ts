@@ -117,7 +117,7 @@ const processBatchNotifications = async () => {
 
 }
 
-const BatchNotification = async (
+export const BatchNotification = async (
     req: Request,
     res: Response
 ) => {
@@ -180,4 +180,4 @@ const GetNotificationForAUser = async (
 
 }
 
-export default { CreateNotification, processBatchNotifications, GetNotificationForAUser, BatchNotification }
+export default { CreateNotification, processBatchNotifications, GetNotificationForAUser }
